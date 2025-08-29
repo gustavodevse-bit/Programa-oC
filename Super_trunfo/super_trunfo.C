@@ -109,15 +109,87 @@ int main(){
     printf("Densidade Populacional: %.2f hab/km²\n", densidade_populacional2);
     printf("PIB per Capita: %.2f reais\n", PIB_per_capita2);
     printf("Super poder: %.2f\n", Super_poder2);
+    
+ // Comparações
+// População
+    printf("População:\n");
+
+    if (populacao > populacao2)
+    {
+        printf("%s Vence\n",estado);
+    }
+    else{
+        printf("%s Vence\n",estado2);
+    }
+    // Área
+    printf("Área:\n");
+
+    if (area > area2)
+    {
+        printf("%s Vence\n",estado);
+    }
+    else{
+        printf("%s Vence\n",estado2);
+    }
+    // PIB
+    printf("PIB:\n");
+    if (PIB > PIB2)
+    {
+        printf("%s Vence\n",estado);
+    }
+    else{
+        printf("%s Vence\n",estado2);
+    }
+    // Números de Pontos Turísticos
+    printf("Números de Pontos Turísticos:\n");
+    if (NPT > NPT2)
+    {
+        printf("%s Vence\n",estado);
+    }
+    else{
+        printf("%s Vence\n",estado2);
+    }
+    // Densidade Populacional
+    printf("Densidade Populacional:\n");
+    if (densidade_populacional < densidade_populacional2)
+    {
+        printf("%s Vence\n",estado);
+    }
+    else{
+        printf("%s Vence\n",estado2);
+    }
+    // PIB per capita
+    printf("PIB per capita:\n");
+    if (PIB_per_capita > PIB_per_capita2)
+    {
+        printf("%s Vence\n",estado);
+    }
+    else{
+        printf("%s Vence\n",estado2);
+    }
+    // Super Carta (Poder)
+    printf("Super Carta (Poder)");
+    if (Super_poder1 > Super_poder2)
+    {
+        printf("%s Vence\n",estado);
+    }
+    else{
+        printf("%s Vence\n",estado2);
+    }
+    
 
     // Comparações
-    printf("%d\n", populacao > populacao2);
-    printf("%d\n", area > area2);
-    printf("%d\n", PIB > PIB2);
-    printf("%d\n", NPT > NPT2);
-    printf("%d\n", densidade_populacional < densidade_populacional2); // menor é melhor
-    printf("%d\n", PIB_per_capita > PIB_per_capita2);
-    printf("%d\n", Super_poder1 > Super_poder2);
-
+    printf("Comparação de cartas (Atributo: População):\n");
+    printf("Carta 1 - %s: %d\n", estado, populacao);
+    printf("Carta 2 - %s: %d\n", estado2, populacao2);
+    if (populacao > populacao2)
+    {
+        printf("Carta 1 - (%s)Venceu\n", estado);
+    }
+    else
+    {
+        printf("Carta 2 - (%s) Venceu\n",estado2);
+    }
+    
     return 0;
 }
